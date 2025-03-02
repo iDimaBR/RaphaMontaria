@@ -1,0 +1,68 @@
+Database:
+  type: "sqlite" # sqlite ou mysql
+  sqlite:
+    fileName: "database.db"
+  mysql:
+    address: "localhost:3306"
+    username: "root"
+    password: ""
+    database: "montaria"
+
+menu:
+  row: 5
+  title: "Seus cavalos"
+  items:
+    add-friend:
+      slot: 44
+      material: NETHER_STAR
+      data: 0
+      name: "&aAdicionar amigo"
+      lore:
+        - "&7Clique para adicionar um amigo aos seus cavalos"
+    remove-friend:
+      slot: 36
+      material: NETHER_STAR
+      data: 0
+      name: "&cRemover amigo"
+      lore:
+        - "&7Clique para remover um amigo dos seus cavalos"
+    list-friend:
+      slot: 40
+      material: NETHER_STAR
+      data: 0
+      name: "&fListar amigos"
+      lore:
+        - "&7Clique para visualizar seus amigos atuais"
+
+schedule-check: 60
+player-config:
+  limit: 3
+
+horses:
+  iron:
+    id: 1
+    velocity: 1.0
+    variant: SKELETON_HORSE
+    item:
+      material: MONSTER_EGG
+      data: 3
+      name: "&eCavalo de Ferro"
+      lore:
+        - "&7Esse cavalo viaja em uma velocidade normal"
+
+allowed-regions:
+  - "spawn"
+
+messages:
+  add-friend:
+    - "&7Qual o nick do jogador que deseja"
+    - "&7adicionar acesso ao seus cavalos?"
+  remove-friend:
+    - "&7Qual o nick do jogador que deseja"
+    - "&7remover o acesso dos seus cavalos?"
+    - ""
+    - "&aAmigos: &f{friends}"
+  list-friend:
+    - "&7Seus amigos atuais:"
+    - ""
+    - "&f{friends}"

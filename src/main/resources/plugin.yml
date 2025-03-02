@@ -1,0 +1,7 @@
+name: RaphaMontaria
+version: '${project.version}'
+main: com.github.idimabr.RaphaMontaria
+api-version: '1.20'
+commands:
+  horsehash:
+  cavalo:
